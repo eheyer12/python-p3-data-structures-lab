@@ -18,9 +18,16 @@ spicy_foods = [
 
 def get_names(spicy_foods):
     pass
+    names = [food["name"] for food in spicy_foods]
+    return names
 
 def get_spiciest_foods(spicy_foods):
     pass
+    heat = [item for item in spicy_foods.items()]
+    if spicy_foods["heat_level"] > 5:
+        return heat
+    else:
+        pass
 
 def print_spicy_foods(spicy_foods):
     pass
